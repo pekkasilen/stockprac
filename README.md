@@ -1,3 +1,42 @@
+# Stock practice project
+
+## Goals
+
+Goal is to show the current stock price and some price history for the selected stocks.
+You can change in between stocks by clicking the tabs up top.
+
+- Build generic Tab component you can use with the selection between stock tickers in a way you could use it in any other project as well. Highlight current tab
+- Show the current price details first in the list
+- Show at least 5 previous days results following it. Show yesterdays result with separate yesterday title instead of timestamp.
+- API's request limit is 500 requests / day. Day historic results could be stored to localstorage / cached
+- Use red/green arrow icon to indicate if stock has gone up or down
+- Separate refresh button to reload the current stock price of the selected ticker
+- Show separate loading indicator when app is fetching data
+
+Bonus: 
+- UI looks nice
+- Make layout responsive in a way that it's usable in all screen sizes
+
+Next up (after previous goals are done)
+- Server with authentication, user can manage personally followed stock tickers
+
+![lay out](./public/leiska.jpeg)
+
+## Rules to follow
+- You can change the initial code however you want and use any libraries needed
+- Use hooks for state management
+- Since the app only has one page for now, you can use App.tsx as a container for it but keep it as place to wrap things together, make separate components for the parts that form the page.
+- Handle state as close to the place it's used, don't put everything in global state
+- Use preferably styled components for styling
+- Build reusable layout components, no copy pasting or hardcoding values. 
+- Preferably use typescript in all components
+- Yarn is used as package manager. You can use npm instead, but stick to one.
+
+## Data
+Data comes from alpha vantage API, which is free public API to get stock related data. API usage is limited to 500 requests/ day. Both current price and historical data has been already set up for usage. You can find them from App.tsx
+
+https://www.alphavantage.co/documentation/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
