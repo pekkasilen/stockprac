@@ -1,0 +1,93 @@
+.button-container {
+  min-width: 510px;
+  margin-bottom: 25px;
+  display: flex;
+  height: 100px;
+  padding: 5px;
+}
+
+.custom-button {
+  border-radius: 15px;
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0.836);
+  color: yellow;
+  margin: 5px;
+  padding: 5px;
+  flex: 1 0 auto;
+}
+
+.custom-button-selected {
+  border-radius: 15px;
+  font-size: 20px;
+  background-color: yellow;
+  color: black;
+  margin: 5px;
+  padding: 5px;
+  flex: 1 0 auto;
+}
+
+.header-style {
+  color: black;
+  margin: 15px;
+  flex: 1 0 auto;
+  font-size: 22px;
+}
+
+table {
+  width: 100%;
+  min-width: 510px;
+  background-color: lightblue;
+  padding: 3px;
+  border-radius: 15px;
+}
+
+th,
+td {
+  padding: 5px;
+  text-align: left;
+}
+
+tr:hover {
+  background-color: yellow;
+}
+
+th {
+  font-size: 22px;
+  border-bottom: 1px solid black;
+}
+
+.arrow-up {
+  color: green;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.arrow-down {
+  font-weight: bold;
+  color: red;
+  font-size: 24px;
+}
+
+.loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+  margin: -76px 0 0 -76px;
+  border: 16px solid black;
+  border-radius: 50%;
+  border-top: 16px solid yellow;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
